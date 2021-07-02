@@ -1,0 +1,29 @@
+#pragma code_page(65001)
+
+1 VERSIONINFO
+
+PRODUCTVERSION 0,1,0,0
+FILEVERSION 0,1,0,0
+FILESUBTYPE 0x0
+FILEFLAGS 0x0
+FILETYPE 0x1
+FILEFLAGSMASK 0x3f
+FILEOS 0x40004
+
+{
+  BLOCK "StringFileInfo" {
+  BLOCK "000004b0" {
+      VALUE "ProductVersion", "0.1.0"
+      VALUE "FileVersion", "0.1.0"
+      VALUE "ProductName", "Mousey"
+      VALUE "InternalName", "Mousey"
+      VALUE "FileDescription", "Mousey"
+      VALUE "OriginalFilename", "Mousey.exe"
+      VALUE "LegalCopyright", "Copyright © 2021 Ash"
+    }
+  }
+
+  BLOCK "VarFileInfo" {
+    VALUE "Translation", 0x0, 0x04b0
+  }
+}

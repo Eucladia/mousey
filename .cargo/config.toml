@@ -1,0 +1,23 @@
+[build]
+rustflags = [
+  "-C", "link-args=/DEBUG:NONE"
+]
+
+# `target.<triple>.rustflags` overrides `build.rustflags`
+[target.x86_64-pc-windows-msvc]
+rustflags = [
+  "-C", "target-feature=+crt-static", "-C", "link-args=/DEBUG:NONE"
+]
+
+[target.i686-pc-windows-msvc]
+rustflags = [
+  "-C", "target-feature=+crt-static", "-C", "link-args=/DEBUG:NONE"
+]
+
+[target.i586-pc-windows-msvc]
+rustflags = [
+  "-C", "target-feature=+crt-static", "-C", "link-args=/DEBUG:NONE"
+]
+
+[alias]
+production = "make --makefile Makefile.toml --profile production flow"
